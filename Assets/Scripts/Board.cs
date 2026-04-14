@@ -131,17 +131,16 @@ public class Board
         return counter >= 4;
     }
 
-    // This allows the AI to "take back" a test move
-   // This allows the AI to "take back" a test move from the TOP of the column
+   
     public void UndoMove(int col)
     {
-        // Start checking from the top row (5) down to the bottom row (0)
+       
         for (int i = 5; i >= 0; i--) 
         {
             if (playerBoard[i][col] != PlayerType.NONE)
             {
                 playerBoard[i][col] = PlayerType.NONE;
-                break; // We found the top piece, removed it, now stop checking!
+                break; 
             }
         }
     }

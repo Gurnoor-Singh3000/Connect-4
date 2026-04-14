@@ -9,7 +9,7 @@ public class Mover : MonoBehaviour
     float speed = 10f;
     public Vector3 targetPostion;
 
-    // Update is called once per frame
+    
     void Update()
     {
         float step = speed * Time.deltaTime;

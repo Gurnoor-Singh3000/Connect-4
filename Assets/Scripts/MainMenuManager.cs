@@ -17,13 +17,12 @@ public class MainMenuManager : MonoBehaviour
 
     public void Load1PlayerGame()
     {
-        GameSettings.playAgainstAI = true; // Set the global state to AI
-        SceneManager.LoadScene("Gameplay");
+        GameSettings.playAgainstAI = true; 
     }
 
     public void Load2PlayerGame()
     {
-        GameSettings.playAgainstAI = false; // Set the global state to Player
+        GameSettings.playAgainstAI = false; 
         SceneManager.LoadScene("Gameplay");
     }
 
